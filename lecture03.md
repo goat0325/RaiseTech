@@ -13,9 +13,9 @@
 
 ###　課題参考画像
 
-* ![起動画像](スクリーンショット%2024-01-15%16.31.33)
-* ![停止画像](スクリーンショット%2024-01-15%16.32.00)
+* <img width="1440" alt="スクリーンショット 2024-01-15 16 31 33" src="https://github.com/goat0325/RaiseTech/assets/147507987/2fde5ab0-ded6-471b-950c-6316881df2c0">
+* <img width="1440" alt="スクリーンショット 2024-01-15 16 32 00" src="https://github.com/goat0325/RaiseTech/assets/147507987/fb5bbde5-b0be-4a9d-a1d2-5c1414c781ef">
 
-* ![APサーバーの名前とバージョン](スクリーンショット%2024-01-14%1.33.36)
-* ![DBサーバーの名前とバージョン](スクリーンショット%2024-01-14%1.43.28)
-* ![Railsの構成管理ツールの名前](スクリーンショット%2024-01-14%1.52.32)
+* <img width="505" alt="スクリーンショット 2024-01-14 1 33 36" src="https://github.com/goat0325/RaiseTech/assets/147507987/8e4853c9-e37e-4619-932c-fdddf828cdc3">
+* <img width="512" alt="スクリーンショット 2024-01-14 1 43 28" src="https://github.com/goat0325/RaiseTech/assets/147507987/7e2ac837-b13c-4478-9dee-cfe397446677">
+* <img width="489" alt="スクリーンショット 2024-01-14 1 52 32" src="https://github.com/goat0325/RaiseTech/assets/147507987/5b1d5269-6c64-4254-8926-5765f2fc2394">
