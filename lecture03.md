@@ -11,11 +11,10 @@
 
 
 
-###　課題参考画像
+### 課題参考画像
 
-* <img width="1440" alt="スクリーンショット 2024-01-15 16 31 33" src="https://github.com/goat0325/RaiseTech/assets/147507987/2fde5ab0-ded6-471b-950c-6316881df2c0">
-* <img width="1440" alt="スクリーンショット 2024-01-15 16 32 00" src="https://github.com/goat0325/RaiseTech/assets/147507987/fb5bbde5-b0be-4a9d-a1d2-5c1414c781ef">
-
-* <img width="505" alt="スクリーンショット 2024-01-14 1 33 36" src="https://github.com/goat0325/RaiseTech/assets/147507987/8e4853c9-e37e-4619-932c-fdddf828cdc3">
-* <img width="512" alt="スクリーンショット 2024-01-14 1 43 28" src="https://github.com/goat0325/RaiseTech/assets/147507987/7e2ac837-b13c-4478-9dee-cfe397446677">
-* <img width="489" alt="スクリーンショット 2024-01-14 1 52 32" src="https://github.com/goat0325/RaiseTech/assets/147507987/5b1d5269-6c64-4254-8926-5765f2fc2394">
+* ![起動画面](../Desktop/images/lecture02/スクリーンショット%202024-01-15%2016.31.33)
+* ![エラー画面](../Desktop/images/lecture02/スクリーンショット%202024-01-15%2016.32.00.png)
+* ![APサーバー確認](../Desktop/images/lecture02/スクリーンショット%202024-01-14%201.33.36.png)
+* ![DBサーバー確認](../Desktop/images/lecture02/スクリーンショット%202024-01-14%201.43.28.png)
+* ![bundler](../Desktop/images/lecture02/スクリーンショット%202024-01-14%201.52.32.png)
