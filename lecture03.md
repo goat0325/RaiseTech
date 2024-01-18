@@ -13,8 +13,8 @@
 
 ### 課題参考画像
 
-* ![起動画面](../Desktop/images/lecture02/スクリーンショット%202024-01-15%2016.31.33)
-* ![エラー画面](../Desktop/images/lecture02/スクリーンショット%202024-01-15%2016.32.00.png)
-* ![APサーバー確認](../Desktop/images/lecture02/スクリーンショット%202024-01-14%201.33.36.png)
-* ![DBサーバー確認](../Desktop/images/lecture02/スクリーンショット%202024-01-14%201.43.28.png)
-* ![bundler](../Desktop/images/lecture02/スクリーンショット%202024-01-14%201.52.32.png)
+* ![起動画面](img/lecture03-1.png)
+* ![エラー画面](img/lecture03-2.png)
+* ![APサーバー確認](img/lecture03-3.png)
+* ![DBサーバー確認](img/lecture03-4.png)
+* ![bundler](img/lecture03-5.png)
