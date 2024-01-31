@@ -14,10 +14,10 @@ AWS cloud→リージョン→VPC→①パブリックサブネット→EC２　
 
 ### 参考資料
 
-* [VPC作成画面](img/lecture04-1.png)
-* [EC2作成画面](img/lecture04-2.png)
-* [EC2セキュリティグループ](img/lecture04-3.png)
-* [RDS作成画面](img/lecture04-4.png)
-* [RDSセキュリティグループ１](img/lecture04-5.png)
-* [RDSセキュリティグループ２](img/lecture04-6.png)
-* [EC2からRDSへ接続](img/lecture04-7.png)
+* ![VPC作成画面](img/lecture04-1.png)
+* ![EC2作成画面](img/lecture04-2.png)
+* ![EC2セキュリティグループ](img/lecture04-3.png)
+* ![RDS作成画面](img/lecture04-4.png)
+* ![RDSセキュリティグループ１](img/lecture04-5.png)
+* ![RDSセキュリティグループ２](img/lecture04-6.png)
+* ![EC2からRDSへ接続](img/lecture04-7.png)
