@@ -141,5 +141,5 @@ $ gem install mysql2
 # Mysqlのインストール
 $ curl -fsSL https://raw.githubusercontent.com/MasatoshiMizumoto/raisetech_documents/main/aws/scripts/mysql_amazon_linux_2.sh | sh
 ```
-! [mysql起動画面](img/lecture05/Mysql起動.png)
+! [mysql起動画面](img/lecture05/1-server-1.png)
 
