@@ -22,6 +22,9 @@
 ###
 1. VPC、サブネット、ルートテーブル、インターネットゲートウェイ
 
+- [test10-vpc.yml](./img/lecture10/test10-vpc.yml)
+
+
 以下、CloudFormationで作成したリソースを記載
 ```
 ・VPC作成
@@ -61,6 +64,7 @@
     パブリックルートテーブルとアタッチ
         - InternetGatewayToRouteTable
 ```
+
 - VPC作成画面
 ![VPC画面](img/lecture10/lecture10-01%20vpc.png)
 
@@ -71,6 +75,8 @@
 ![プライベートサブネットリソースマップ](img/lecture10/lecture10-03%20PrivateSubnetリソースマップ.png)
 
 2. EC2、付随するセキュリティグループ
+
+- [test10-EC2.yml](./img/lecture10/test10-EC2.yml)
 
 以下、CloudFormationで作成したリソースを記載
 ```
@@ -90,6 +96,8 @@
 ![SSH接続確認画面](img/lecture10/lecture10-06%20SSH接続確認.png)
 
 3. RDS、付随するセキュリティグループ
+
+- [test10-RDS.yml](./img/lecture10/test10-RDS.yml)
 
 以下、CloudFormationで作成したリソースを記載
 ```
@@ -113,6 +121,9 @@
 ![RDSサブネットグループ](img/lecture10/lecture10-09%20RDSサブネットグループ.png)
 
 4. ALB、ターゲットグループ、付随するセキュリティグループ
+
+- [test10-ALB.yml](/img/lecture10/test10-ALB.yml)
+
 
 以下、CloudFormationで作成したリソースを記載
 ```
@@ -138,6 +149,8 @@
 ![ターゲットグループ](img/lecture10/lecture10-12%20TargetGroup.png)
 
 5. S3、IAMのポリシー、ロール
+
+- [test10-S3.yml](/img/lecture10/test10-S3.yml)
 
 以下、CloudFormationで作成したリソースを記載
 ```
