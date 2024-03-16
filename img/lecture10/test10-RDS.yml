@@ -84,4 +84,3 @@ Resources:
         - Key: Name
           Value: !Sub "${EnvironmentName}-RDS"
 
-          
