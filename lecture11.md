@@ -101,7 +101,46 @@ end
 
 多様なマッチャーがある。serverspecサイトで確認可能。
 
+- テスト実行
+```
+localhostディレクトリにて
+$ rake spec
+```
+
 以下、テストコードの記述、検証結果
+
+```
+# ===追加コードニー=
+# Nginxはインストールされているか
+describe package( 'nginx') do
+ it { should be installed }
+end
+
+# Nainxプロセスは実行中か
+describe process ("nginx") do
+ it { should be_running }
+end
+
+# 80番ポートをリスニングしているか
+describe port (80) do
+ it { should be listening } 
+end
+
+# 3306番ポートをリスニングしているか
+describe port (3306) do
+ it { should be_listening } 
+end
+
+# 指定されたポート（listen_portで指定された番号）に対して、HTTPリクエストを送信し、レスポンスのHTTPステータスコードが200であることを確認するテスト
+describe command( curl http:/ /127.0.0.1:#{listen_port}/_plugin/head/ -o /dev/null
+ its(:stdout) { should match /^200$/
+end
+
+# gitはインストールされているか
+describe package ('git') do
+ it { should be_installed } 
+end
+```
 
 ![テストコード](img/lecture11/serverspec%20テストコード%2011-1.png)
 
