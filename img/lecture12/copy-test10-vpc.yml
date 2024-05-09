@@ -18,6 +18,16 @@ Parameters:
     Type: String
     Default: 10.0.0.0/16
 
+  MyAvailabilityZone1:
+    Description: Availability Zone for Public Subnet 1
+    Type: String
+    Default: ap-northeast-1a
+  
+  MyAvailabilityZone2:
+    Description: Availability Zone for Public Subnet 2
+    Type: String
+    Default: ap-northeast-1c
+
 
 Resources:
 # ===========================================================================
@@ -42,7 +52,7 @@ Resources:
     Type: "AWS::EC2::Subnet"
     Properties:
       VpcId: !Ref MyVPC
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Ref MyAvailabilityZone1
       CidrBlock: 10.0.1.0/24
       MapPublicIpOnLaunch: true
       Tags:
@@ -53,7 +63,7 @@ Resources:
     Type: "AWS::EC2::Subnet"
     Properties:
       VpcId: !Ref MyVPC
-      AvailabilityZone: ap-northeast-1c
+      AvailabilityZone: !Ref MyAvailabilityZone2
       CidrBlock: 10.0.2.0/24
       Tags:
         - Key: Name
@@ -65,7 +75,7 @@ Resources:
     Type: "AWS::EC2::Subnet"
     Properties:
       VpcId: !Ref MyVPC
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Ref MyAvailabilityZone1
       CidrBlock: 10.0.3.0/24
       Tags:
         - Key: Name
@@ -75,7 +85,7 @@ Resources:
     Type: "AWS::EC2::Subnet"
     Properties:
       VpcId: !Ref MyVPC
-      AvailabilityZone: ap-northeast-1c
+      AvailabilityZone: !Ref MyAvailabilityZone2
       CidrBlock: 10.0.4.0/24
       Tags:
         - Key: Name
