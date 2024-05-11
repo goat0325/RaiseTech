@@ -4,10 +4,11 @@
 1. 提供されたcircleciのサンプルコンフィグが、正しく動作するようにリポジトリに組み込む。動作ができたら報告。
 
 ### 1.  circleciとは
-```
+
 SaaS（Software as a Service）型のCI/CDツール。
+
 無料枠あり。
-```
+
 
 ### 2. SaaSとは
 ```
@@ -35,15 +36,14 @@ circleciは、いくつかあるCI/CDツールの中の一つ。
 - CI/CDツールの機能
 
 以下の機能を使い、自動的にテストを実装したり、リリースしたりする。
-```
-・ジョブ機能：定形作業を自動化した小さな単位＝ジョブとする。
+- ジョブ機能：定形作業を自動化した小さな単位＝ジョブとする。
 
-・トリガー機能：ジョブはただ実行されるだけではなく、トリガーを設定することで、起動条件を詳細に指定できる。
+- トリガー機能：ジョブはただ実行されるだけではなく、トリガーを設定することで、起動条件を詳細に指定できる。
 例）前のジョブが完了したら実行する。
 　　指定の時間が来たら定期的に実行する。など
 
-・パイプライン機能：ジョブ機能・トリガー機能を一連の流れ（パイプライン）とすることで、呼び出す時の記述が容易になる、全体の可視化がしやすくなる。
-```
+- パイプライン機能：ジョブ機能・トリガー機能を一連の流れ（パイプライン）とすることで、呼び出す時の記述が容易になる、全体の可視化がしやすくなる。
+
 
 
 ## 1. circleciのサンプルコンフィグの動作確認
@@ -61,7 +61,8 @@ $ git push origin main
 ```
 
 サンプルを参考に動作を確認していく
-- [circleciサンプル](./img/lecture12/sample-lecture12-config.yml)
+- [circleciサンプル](yaml/lecture12/sample-lecture12-config.yml)
+
 
 以下サンプルの内容
 ```
@@ -118,25 +119,25 @@ jobs:
 ~
 ~
 command: |
-  cfn-lint -i W3002 -t img/lecture12/*.yml
+  cfn-lint -i W3002 -t yaml/lecture12/*.yml
 
 
-これで、img/lecture12内にあるymlファイルを参照するように設定。
+これで、yaml/lecture12内にあるymlファイルを参照するように設定。
 ```
 
 表示されたエラー画像
 ![エラー３](img/lecture12/12-3%20erroe3.png)
 
 記載されているエラー内容
-```
-①W3010：警告コード
 
-②Don't hardcode ap-northeast-la(1c) for AvailabilityZones
+#### 1. W3010：警告コード
+
+#### 2. Don't hardcode ap-northeast-la(1c) for AvailabilityZones
 特定のルールに違反している。今回は、アベイラビリティゾーンをハードコード（直書き）してしまっていることが問題。
 
-③img/lecture12/copy-test10-vpc. yml: 45:7
+#### 3. img/lecture12/copy-test10-vpc. yml: 45:7
 エラーが見つかったファイルとその行番号、列番号
-```
+
 
 - copy-test10-vpc.yml内のAvailabilityZonesを確認
 ```
