@@ -11,16 +11,19 @@ SaaS（Software as a Service）型のCI/CDツール。
 
 
 ### 2. SaaSとは
-```
-サービス提供事業者（サーバー）側で稼働しているソフトウェアを、インターネットなどのネットワークを経由して、ユーザーが利用できるサービス。一般的に、SaaSは提供されるソフトウェアを指す。
-```
+
+サービス提供事業者（サーバー）側で稼働しているソフトウェアを、インターネットなどのネットワークを経由して、ユーザーが利用できるサービス。
+
+一般的に、SaaSは提供されるソフトウェアを指す。
+
 
 ### 3. CI/CDツールとは
 
 - CI/CDツールとは
 
-```
+
 「Continuous Integration/Continuous Delivery」の略称。
+
 →継続的な価値提供、継続的なリリースを維持するもの。
 
 ・CI（継続的インテグレーション）・・・
@@ -31,7 +34,7 @@ SaaS（Software as a Service）型のCI/CDツール。
 
 →CI/CDはやる事や目的はほぼ同じ、どこまでやるかだけが違う。
 circleciは、いくつかあるCI/CDツールの中の一つ。
-```
+
 
 - CI/CDツールの機能
 
@@ -88,7 +91,7 @@ workflows:   #ワークフローを定義
 
 ### test10にて作成したYAMLファイルを使用してテスト実行
 
-※今回の課題では、lecture10で作成した「test10-vpc.yml」をコピーし、「copy-test10-vpc.yml」としてimg/lecture12に保存したものをテストに使用。
+※今回の課題では、lecture10で作成した「test10-vpc.yml」をコピーし、「copy-test10-vpc.yml」として、yaml/lecture12/copy-test10に保存したものをテストに使用。
 
 - [元々作成していたtest10-vpc.yml](./img/lecture10/test10-vpc.yml)
 
@@ -124,6 +127,8 @@ command: |
 
 これで、yaml/lecture12内にあるymlファイルを参照するように設定。
 ```
+- [変更後の.circleci/config.yml](./.circleci/config.yml)
+
 
 表示されたエラー画像
 ![エラー３](img/lecture12/12-3%20erroe3.png)
@@ -135,7 +140,7 @@ command: |
 #### 2. Don't hardcode ap-northeast-la(1c) for AvailabilityZones
 特定のルールに違反している。今回は、アベイラビリティゾーンをハードコード（直書き）してしまっていることが問題。
 
-#### 3. img/lecture12/copy-test10-vpc. yml: 45:7
+#### 3. yaml/lecture12/copy-test10/copy-test10-vpc. yml: 45:7
 エラーが見つかったファイルとその行番号、列番号
 
 
@@ -199,6 +204,7 @@ Resources:
     ~
 ================================================
 ```
+- [変更後のcopy-test10-vpc.yml](./yaml/lecture12/copy-test10/copy-test10-vpc.yml)
 
 変更後、再度circleciテスト実行
 ![テスト成功](img/lecture12/12-4%20success.png)
